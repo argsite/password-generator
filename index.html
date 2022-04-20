@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <img src="img/padlock.png" alt="Cadeado">
+            
+        <h3 class="password-display" id="passwordDisplay"></h3>
+            
+            <form id="passwordGeneratorForm">
+                <label for="qtdeCharNumber">Comprimento da Senha:</label>
+                
+                <div class="qtdeChar"><input type="range" min="1" max="40" value="12" name="" id="qtdeCharRange">
+                <input type="number" min="1" max="40" value="12" name="" id="qtdeCharNumber"></div>
+               
+                <div><input type="checkbox" name="" id="incluirUppercase">
+                <label for="incluirUppercase">Letras Maiúsculas (ex. ABC) </label></div>
+               
+                <div><input type="checkbox" name="" id="incluirNumeros">
+                <label for="incluirNumeros">Números (ex. 345) </label></div>
+               
+                <div><input type="checkbox" name="" id="incluirSimbolos">
+                <label for="incluirSimbolos">Símbolos (ex. @&$%!?) </label></div>
+
+                <div><button type="submit" id="botaoGerar">Gerar Senha Forte</button>
+                <button type="button" id="botaoCopiar">Copiar</button></div>
+            </form>
+    </div>
+    <div class="mensagem"><p >Senha copiada com sucesso! Guarde-a em um lugar seguro.<br>
+    Dois gerenciadores de senhas muito bons são o <a href="https://www.dashlane.com/pt-br/" target="_blank">Dashlane</a> e o <a href="https://1password.com/pt/" target="_blank">1Password</a>.</p>
+    </div>
+
+</body>
+</html>
